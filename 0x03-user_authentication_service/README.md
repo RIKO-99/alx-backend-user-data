@@ -1,4 +1,4 @@
-# Flask User Authentication with SQLAlchemy Example
+# Flask User Authentication with SQLAlchemy 
 
 A Flask project demonstrating user authentication with SQLAlchemy and bcrypt.
 
@@ -14,7 +14,6 @@ This project showcases a simple Flask application with user authentication. User
 - Demonstrates how to use Flask flash messages
 
 ## Getting Started
-
 ### Prerequisites
 
 Ensure you have Python, pip, and a virtual environment tool installed on your system.
@@ -55,3 +54,6 @@ A documentation is not a simple word, it’s a real sentence explaining what’s
 All your functions should be type annotated
 The flask app should only interact with Auth and never with DB directly.
 Only public methods of Auth and DB should be used outside these classes
+
+##### SQLAlchemy Model Mapping
+In this project, the User model is mapped to the database using SQLAlchemy. The User class represents a table in the database, and each instance of the class corresponds to a row in that table.
