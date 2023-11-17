@@ -10,6 +10,10 @@ AUTH = Auth()
 
 app = Flask(__name__)
 
+def _hash_password(password: str) -> bytes:
+    salt = bcrypt.gensalt()
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'), salt)
+    return hashed_password
 
 @app.route('/', methods=['GET'])
 def index() -> str:
